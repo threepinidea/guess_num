@@ -2,8 +2,9 @@
 # 讓使用者重複輸入數字,直到猜對指定數字才停止 使用 while
 
 import random
-
-r = random.randint(1, 100)
+star = int(input('請輸入隨機範圍數字起始值: '))
+end = int(input('請輸入隨機範圍數字結束值:'))
+r = random.randint(star, end)
 count = 0
 while True:
     count += 1
